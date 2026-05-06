@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        }
+    .container
+    {
+        width: 400px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px gray;
+    }    
+    h2{
+        text-align: center;
+    }
+    input,select
+    {
+        width: 100%;
+        padding: 8px;
+        margin: 6px;
+    }
+    button
+    {
+        background-color: green;
+        color: white;
+        cursor: pointer;
+        width: 100%;
+        padding: 8px;
+    }
+</style>
+<body>
+    <div class="container">
+    <h2>Student Registration Form</h2>
+    <form>
+        Name:<br>
+        <input type="text" name="name" required placeholder="Enter Your Full Name"><br>
+
+        Email:<br>
+        <input type="email" name="email" required placeholder="Enter your email"><br>
+
+        Phone no.:<br>
+        <input type="tel" name="phone" placeholder="Enter 10-digit number" required><br>
+
+        Gender:<br>
+        <input type="radio" name="gender" value="Male" style="width: auto;">Male
+        <input type="radio" name="gender" value="Female" style="width: auto;">Female<br>
+
+        Date of Birth:<br>
+        <input type="date" name="dob"><br>
+
+        Caste:<br>
+        <input type="text" name="caste" placeholder="Enter caste" required ><br>
+
+        Address:<br>
+        <input type="text" name="address" placeholder="Enter address" required><br>
+
+        Previous College:<br>
+        <input type="text" name="college" placeholder="Enter college name" required><br>
+
+        Marks:<br>
+        <input type="number" name="marks" placeholder="Enter marks " required><br>
+
+        Course:<br>
+        <select name="course">
+            <option value="">--Select Course--</option>
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>Bsc</option>
+            <option>BTech</option>
+        </select>
+        <br>
+        
+        <button>Submit</button>
+
+    </form>
+    </div>
+</body>
+</html>
